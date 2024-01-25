@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #EE204D;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.2s ease;
+}
+
+.circle:hover {
+  background-color: #E32636;
+  cursor: pointer;
+}
