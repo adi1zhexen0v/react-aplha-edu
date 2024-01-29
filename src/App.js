@@ -1,13 +1,14 @@
-import "./App.css";
-
-// Ctrl - J - Open a terminal
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import BlogList from "./components/BlogList";
 
 function App() {
   return (
-    <div>
-      <h1>Адиль Жексенов</h1>
-      <p>Город проживания: Астана</p>
-    </div>
+    <>
+      <Header />
+      <BlogList />
+      <Footer />
+    </>
   );
 }
 
