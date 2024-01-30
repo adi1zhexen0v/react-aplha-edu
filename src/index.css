@@ -44,85 +44,97 @@ body {
 
 .container {
   width: 1200px;
-  margin: 0 auto;
-}
-
-.header {
-  background: #efefef;
-  border-bottom: 1px solid #dadada;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 0;
-}
-
-.nav-logo {
-  font-size: 32px;
-  line-height: 40px;
-  font-weight: 700;
-}
-
-.nav-btn {
-  padding: 12px 24px;
-  border: 1px solid #dadada;
-  border-radius: 8px;
-  background: #fff;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 28px;
-  transition: 0.2s ease;
-}
-
-.nav-btn:hover {
-  cursor: pointer;
-  background: #fafafa;
-}
-
-.blog {
-  padding: 80px 0;
-}
-
-.blog-grid {
+  margin: 60px auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
 }
 
-.blog-item {
-  padding: 16px 24px;
+.counter {
+  padding: 24px;
   border: 1px solid #dadada;
-  border-radius: 12px;
-  background: #fff;
+  border-radius: 16px;
 }
 
-.blog-title {
-  font-size: 24px;
+.counter-title {
+  font-size: 28px;
+  line-height: 40px;
   font-weight: 700;
+  text-align: center;
   padding-bottom: 16px;
   border-bottom: 1px solid #dadada;
 }
 
-.blog-text {
-  padding: 16px 0;
-}
-
-.footer {
-  padding: 32px 0;
-  background: #efefef;
-  border-top: 1px solid #dadada;
-}
-
-.footer-container {
+.counter-body {
+  padding-top: 12px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
-.footer-text {
+.counter-button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dadada;
+  border-radius: 100%;
+  background: #efefef;
   font-size: 20px;
-  line-height: 28px;
-  font-weight: 300;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.counter-button:hover {
+  cursor: pointer;
+  background: #eaeaea;
+}
+
+.counter-button:active {
+  background: #dadada;
+}
+
+.counter-number {
+  line-height: 80px;
+  font-weight: 700;
+}
+
+.small {
+  font-size: 36px;
+}
+
+.medium {
+  font-size: 48px;
+}
+
+.large {
+  font-size: 64px;
+}
+
+.counter-btn-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.counter-btn-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #dadada;
+  background: #efefef;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.counter-btn-item:hover {
+  cursor: pointer;
+  background: #eaeaea;
+}
+
+.counter-btn-item:active {
+  background: #dadada;
 }

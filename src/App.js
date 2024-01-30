@@ -1,14 +1,13 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import BlogList from "./components/BlogList";
+import Counter from "./components/Counter";
 
 function App() {
   return (
-    <>
-      <Header />
-      <BlogList />
-      <Footer />
-    </>
+    <div className="container">
+      <Counter title="Первый счетчик" />
+      <Counter title="Второй счетчик" />
+      <Counter title="Еще один счетчик" />
+      <Counter title="Другой счетчик" />
+    </div>
   );
 }
 
