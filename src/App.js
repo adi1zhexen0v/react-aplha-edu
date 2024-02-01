@@ -1,13 +1,14 @@
-import Counter from "./components/Counter";
+import Navbar from "./components/Navbar";
+import CounterList from "./components/CounterList";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="container">
-      <Counter title="Первый счетчик" />
-      <Counter title="Второй счетчик" />
-      <Counter title="Еще один счетчик" />
-      <Counter title="Другой счетчик" />
-    </div>
+    <>
+      <Navbar />
+      <CounterList />
+      <Footer />
+    </>
   );
 }
 

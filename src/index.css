@@ -40,6 +40,7 @@ button, input, select, textarea {
 
 body {
   font-family: 'Roboto', sans-serif;
+  background: #eef7f9;
 }
 
 .container {
@@ -50,8 +51,46 @@ body {
   grid-gap: 40px;
 }
 
+.header {
+  background: #353b45;  
+  padding: 24px 0;
+}
+
+.nav {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-title {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #fff; 
+}
+
+.footer {
+  background: #353b45;  
+  padding: 24px 0;
+}
+
+.footer-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #fff; 
+}
+
 .counter {
   padding: 24px;
+  background: #fff;
   border: 1px solid #dadada;
   border-radius: 16px;
 }
@@ -77,20 +116,29 @@ body {
   height: 40px;
   border: 1px solid #dadada;
   border-radius: 100%;
-  background: #efefef;
+  color: #fff;
   font-size: 20px;
   font-weight: 700;
+  cursor: pointer;
   transition: 0.2s ease;
 }
 
-.counter-button:hover {
-  cursor: pointer;
-  background: #eaeaea;
+.counter-button__green {
+  background: #689f27;
 }
 
-.counter-button:active {
-  background: #dadada;
+.counter-button__green:hover {
+  background: #4d7228;
 }
+
+.counter-button__red {
+  background: #e35c3c
+}
+
+.counter-button__red:hover {
+  background: #c44e35;
+}
+
 
 .counter-number {
   line-height: 80px;
@@ -109,7 +157,7 @@ body {
   font-size: 64px;
 }
 
-.counter-btn-list {
+.counter-size-list {
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -117,7 +165,7 @@ body {
   gap: 4px;
 }
 
-.counter-btn-item {
+.counter-size-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,11 +178,15 @@ body {
   transition: 0.2s ease;
 }
 
-.counter-btn-item:hover {
+.counter-size-item:hover {
   cursor: pointer;
   background: #eaeaea;
 }
 
-.counter-btn-item:active {
+.counter-size-item:active {
+  background: #dadada;
+}
+
+.counter-size-item__active {
   background: #dadada;
 }
