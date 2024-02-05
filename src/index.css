@@ -46,9 +46,6 @@ body {
 .container {
   width: 1200px;
   margin: 60px auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
 }
 
 .header {
@@ -65,26 +62,6 @@ body {
   font-size: 32px;
   line-height: 48px;
   font-weight: 700;
-  color: #fff; 
-}
-
-.footer {
-  background: #353b45;  
-  padding: 24px 0;
-}
-
-.footer-container {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.footer-text {
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 300;
   color: #fff; 
 }
 
@@ -189,4 +166,19 @@ body {
 
 .counter-size-item__active {
   background: #dadada;
+}
+
+.toggle-btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #ffb71a;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  transition: 0.2s ease;
+}
+
+.toggle-btn:hover {
+  cursor: pointer;
+  background: #ffc954;
 }

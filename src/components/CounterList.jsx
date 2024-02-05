@@ -1,13 +1,19 @@
+import { useState } from "react";
 import Counter from "./Counter";
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
 function CounterList() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function handleClickToggleCounter() {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <div className="container">
-      {numbers.map((number) => (
-        <Counter number={number} />
-      ))}
+      <button className="toggle-btn" onClick={handleClickToggleCounter}>
+        {isOpen ? "Скрыть счетчик" : "Показать счетчик"}
+      </button>
+      {isOpen && <Counter number={1} />}
     </div>
   );
 }
