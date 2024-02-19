@@ -1,17 +1,12 @@
-import Navbar from "./components/Navbar";
-import CounterList from "./components/CounterList";
-
-// Жизненные циклы компонента:
-// 1) Монтирование/Создание - componentDidMount()
-// 2) Обновление - componentDidUpdate()
-// 3) Размонтирование/Удаление - componentWillUnmount()
+import RegistrationFormWithHookForm from "./components/RegistrationFormWithHookForm ";
+import RegistrationFormWithoutHookForm from "./components/RegistrationFormWithoutHookForm";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <CounterList />
-    </>
+    <div className="container">
+      <RegistrationFormWithHookForm />
+      {/* <RegistrationFormWithoutHookForm /> */}
+    </div>
   );
 }
 
